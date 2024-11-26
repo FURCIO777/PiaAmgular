@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>PIA</title>
+        <link rel="stylesheet" href="cssabgular.css">
+    </head>
+    <body>
+        <header id="main-header">
+            <a id="logo-header" href="#">
+                <span class="site-name">Pia</span>
+                <span class="site-desc">Desarrollo de Páginas Web Dinámicas</span>
+            </a> <!-- / #logo-header-->
+            <nav>
+                <ul>
+                    <li><a href="Farmacia.html">Inicio</a></li><!-- Menu inicio-->
+                    <li class="dropdown"><!--menu funciones predefinida-->
+                        <a href="javascript:void(0)" class="dropbtn">Nuestros Productos!</a>
+                        <div class="dropdown-content">
+                            <a href="pastilas.html">Pastillas</a>
+                            <a href="jarabe.html">Jarabes</a>
+                            <a href="Insumos.html">Insumos</a>
+                            
+                        </div>
+                        <li class="dropdown"><!--menu funciones definidas-->
+                            <a href="javasrcipt:void(0)" class="dropbtn">Acerca de nosotros</a>
+                            <div class="dropdown-content">
+                                <a href="mision.html">Mision</a>
+                                <a href="nuestroeq.html">Nuestro Equipo</a>
+                            </div></li>
+                </ul>
+            </nav>
+<center>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="est.css">
+    <title>Pastillas</title>
+</head>
+<body>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://phx-tempra-mx-prod.s3.eu-central-1.amazonaws.com/media/40eisku5/tempra-boost-12t_i.png" alt="">
+                    </div>
+                    <p class="descripcion">Tempra Boost® </p>
+                    <span class="precio">$79.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://farmaciasklyns.vtexassets.com/arquivos/ids/176461/7506460100913.png?v=638530562199700000" alt="">
+                    </div>
+                    <p class="descripcion">Temprafen® .</p>
+                    <span class="precio">$140.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://www.plmconnection.com/plmservices/PharmaSearchEngine/Mexico/DEF/SIDEF/400x400/liomont_garbican_familia.png" alt="">
+                    </div>
+                    <p class="descripcion">Garbican 75 mg </p>
+                    <span class="precio">$893.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://www.plmconnection.com/plmservices/PharmaSearchEngine/Mexico/DEF/SIDEF/400x400/sanfer_asenlix_caps_30mg_caja60.png" alt="">
+                    </div>
+                    <p class="descripcion">Asenlix 30 mg </p>
+                    <span class="precio">$1,944.00</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://hospitales.farmaciasespecializadas.com/ccstore/v1/images/?source=/file/v525438255616917593/products/20943.png&height=300&width=300" alt="">
+                    </div>
+                    <p class="descripcion">Pisaurit 20 mg </p>
+                    <span class="precio">$270.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="https://www.fahorro.com/media/catalog/product/7/5/7501123016907_3.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700" alt="">
+                    </div>
+                    <p class="descripcion">Yuredol 1250 mg </p>
+                    <span class="precio">$598.00</span>
+                </div>
+            </div> 
+        </div>
+               <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+               <div class="seleccion" id="seleccion">
+                <div class="cerrar" onclick="cerrar()">
+                    &#x2715
+                </div>
+                <div class="info">
+                    <img src="https://www.plmconnection.com/plmservices/PharmaSearchEngine/Mexico/DEF/SIDEF/400x400/sanfer_asenlix_caps_30mg_caja60.png" alt="" id="img">
+                    <h2 id="modelo">NIKE MODEL 1</h2>
+                    <p id="descripcion">Descripción Modelo 1</p>
+    
+                    <span class="precio" id="precio">$ 130</span>
+    
+                    <div class="fila">
+                        <div class="size">
+                            <label for="">UNIDADES</label>
+                            <select name="" id="">
+                                <option value="">1</option>
+                                <option value="">2</option>                                
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                            </select>
+                        </div>
+                        <button>AGREGAR AL CARRITO</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+    </html>
